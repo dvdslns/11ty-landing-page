@@ -1,0 +1,19 @@
+{% for item in collections.sections %}
+  {% if item.data.type === 'live' %}
+  <section class="container min-h-screen py-12 mx-auto">
+
+    <header class="max-w-xl ">
+      <h1 class="mb-10 text-6xl font-bold">Seminario Derecho de Autor</h1>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius fuga illo temporibus eveniet atque rem iusto quasi sequi. Nobis voluptates placeat provident, totam incidunt sint dignissimos pariatur aspernatur distinctio?</p>
+    </header>
+    <div id="about" class="grid w-full grid-cols-3 gap-12 py-12 rose-100">
+      <div class='col-span-2 embed-container'><iframe class="w-full aspect-video " src='https://www.youtube.com/embed/ersN5fk8py0' frameborder='0' allowfullscreen></iframe></div>
+
+      <div class="relative flex chat">
+      <iframe class="w-full" src="https://organizations.minnit.chat/1782616474923665117/Main?embed&nickname=" style="height:500px;" allowTransparency="true"></iframe>
+      </div>
+    </div>
+    </section>
+  {% endif %}
+{% endfor %}

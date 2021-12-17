@@ -1,17 +1,13 @@
 {
-  "baseURL": "https://awesome11ty.ttntm.me",
-  "author": "AWE.SOME",
-  "description": "AWE.SOMEty - A Landing Page Template for 11ty",
-  "title": "AWE.SOMEty - A Landing Page Template for 11ty",
-  "language": "en",
+  "baseURL": "https://seminarioderechoautor.thefriendlycorp.com",
+  "author": "The Friendly Corp.",
+  "description": "Seminario Derecho de Autor - Ministerio de las Culturas, las Artes y el Patrimonio",
+  "title": "Seminario Derecho de Autor - Ministerio de las Culturas, las Artes y el Patrimonio",
+  "language": "es",
   "social": [
     {
       "title": "Twitter",
-      "url": "https://twitter.com/#"
-    },
-    {
-      "title": "LinkedIn",
-      "url": "https://linkedin.com/company/#"
+      "url": "https://twitter.com/culturas_cl"
     }
   ]
 }

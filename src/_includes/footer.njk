@@ -1,51 +1,14 @@
-<footer class="flex flex-col w-full px-4 py-16 text-lg tracking-wide sm:flex-row sm:justify-center sm:px-0">
-  <div class="py-4 pr-0 text-center sm:pr-8">
-    <ul class="list-none">
-      {% for item in site.social %}
-        <li>
-          <a class="text-gray-800 no-underline hover:text-purple-600" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="w-1/2 h-px mx-auto bg-purple-600 sm:h-auto sm:w-px sm:mx-0"></div>
-  <div class="px-8 py-4 text-center">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 no-underline hover:text-purple-600" href="{% if isFront %}#about{% else %}{{ site.baseURL }}/#about{% endif %}">About</a>
-      </li>
-      <li>
-        <a class="text-gray-800 no-underline hover:text-purple-600" href="{% if isFront %}#features{% else %}{{ site.baseURL }}/#features{% endif %}">Features</a>
-      </li>
-    </ul>
-  </div>
-  <div class="w-1/2 h-px mx-auto bg-purple-600 sm:h-auto sm:w-px sm:mx-0"></div>
-  <div class="py-4 pl-0 text-center sm:pl-8">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 no-underline hover:text-purple-600" href="/privacy">Privacy</a>
-      </li>
-      <li>
-        <a class="text-gray-800 no-underline hover:text-purple-600" href="/imprint">Imprint</a>
-      </li>
+<footer class="flex flex-col py-14 md:flex-row w-full max-w-screen-xl mx-auto justify-between items-center px-4">
+  <img class="w-28" src="/img/logo-mincap.svg" alt="logo Ministerio de las Culturas, las Artes y el Patrimonio">
+
+  <div class="flex text-lg space-x-8 order-first md:order-none mb-12 md:mb-0">
+    <p>Compártelo en</p>
+
+    <ul class="flex space-x-4 ">
+      <li><a href="#"><img class="w-7" src="/img/ico-fb.svg" alt="Facebook"></a></li>
+      <li><a href="#"><img class="w-7" src="/img/ico-tw.svg" alt="Twitter"></a></li>
+      <li><a href="#"><img class="w-7" src="/img/ico-wa.svg" alt="WhatsApp"></a></li>
+      <li><a href="#"><img class="w-7" src="/img/ico-fb.svg" alt="Email"></a></li>
     </ul>
   </div>
 </footer>
-<div class="w-full">
-  <span class="block text-sm font-light text-center text-gray-800">
-    &copy; AWE.SOME
-  </span>
-</div>
-<div class="">
-  <a id="btt"
-    class="fixed bottom-0 right-0 hidden px-6 py-1 mb-4 mr-4 text-gray-200 no-underline bg-purple-600 border border-purple-600 shadow-md hover:bg-gray-200 hover:text-purple-600 hover:border-browngray"
-    href="#top" title="Back to Top">UP</a>
-</div>
-<!-- "Follow" Tooltip template -->
-<template id="followTip">
-  {% for item in site.social %}
-    <a href="{{ item.url }}"
-      class="inline-block p-1 px-4 mx-2 my-1 text-sm text-gray-200 no-underline bg-purple-600 shadow-md hover:bg-gray-200 hover:text-gray-800"
-      target="_blank" rel="noopener">{{ item.title }}</a>
-  {% endfor %}
-</template>

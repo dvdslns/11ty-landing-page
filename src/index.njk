@@ -2,11 +2,20 @@
 layout: base.njk
 isFront: true
 ---
-<header class="flex flex-col justify-between w-full header">
-  {% include "navbar.njk" %}
-  {# {% include "section.header.njk" %} #}
-</header>
+
 <main>
+  <header class="w-full max-w-screen-xl mx-auto flex max-h-60 justify-between px-4" >
+    <div class="max-w-xs w-full flex-none">
+      <svg width="110" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#F9451E" d="M0 0h55v11H0z"/><path fill="#2272BC" d="M55 0h55v11H55z"/></svg>
+
+      <span>-1er Seminario-</span>
+      <h1 class="text-4xl font-medium underline">Derecho de Autor y Cultura</h1>
+      <p>Martes 21 de Diciembre<br>
+      9:00 - 14:00</p>
+    </div>
+
+    <img class="hidden md:flex w-full h-auto max-w-2xl" src="/img/bg.png">
+  </header>
   {% include "section.live.njk" %}
   {# {% include "section.about.njk" %} #}
   {# {% include "section.features.njk" %}
